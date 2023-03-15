@@ -245,3 +245,6 @@ def ordem_inseto():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+#teste
+#teste2
