@@ -42,9 +42,11 @@ nav ul li a.active,
 nav ul li a:hover{
     background: #ffffff;
 }
+
 .logo img{
     width: 90px;
     height: auto;
+    padding: 10px;
 }
 body{
     background-color: #2F4F4F;
@@ -69,10 +71,8 @@ body{
 .caixaPerguntas{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 2rem;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
 
 .perguntas {
@@ -87,15 +87,15 @@ body{
 }
 
 label{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-label, input[type="radio"]{
-    margin-bottom: 3%;
+input[type='radio']{
+    background-image: url(http://www.webcis.com.br/images/imagens-noticias/checkbox/ico-master.webp);
 }
 
-input[type="radio"]{
-    border: 15px solid white;
+.pergunta1-caixa{
+    margin-bottom: 30px;
 }
 
 .botoes-caixa{
@@ -184,8 +184,10 @@ main{
     background-color: #01282e;
     border: 1px solid white;
     border-radius: 5px;
+    margin-top: 2rem;
     padding: 3em;
     display: block;
+    min-height: 500px;
 }
 
 .titulo-inseto{
@@ -200,15 +202,43 @@ main{
     color: white;
 }
 
+.tamanho{
+    width: 240px;
+    height: 240px;
+    background-color: aqua;
+    float: left;
+    margin-right: 1rem;
+}
+
 .img-inseto{
-    width: 50%;
+    width: 100%;
+    height: 100%;
     border: 5px solid white;
     border-radius: 5px;
-    float: left;
-    margin-bottom: 1em;
-    margin-right: 1em;
+    
 }
 
 .overflow {
     overflow: visible;
+}
+
+.titulo-sobre{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.texto-sobre{
+    color: white;
+    font-size: 18px;
+}
+
+.rodape-sobre{
+    margin-top: 50px;
+}
+
+.nome-sobre{
+    color: rgba(255, 255, 255, 0.514);
 }
