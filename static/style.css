@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+*{
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: Border-box;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #01282e7a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    filter: invert(100%);
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+nav ul li{
+    margin: 5px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #ffffff;
+}
+.logo img{
+    width: 90px;
+    height: auto;
+}
+body{
+    background-color: #2F4F4F;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+.bg-image {
+    background-image: url(images/logo.png);
+    background-size: 450px;
+    background-repeat: repeat;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.titulo-caixa{
+    text-align: center;
+    margin-bottom: 5%;
+    color: white;
+}
+
+.caixaPerguntas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.perguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #01282e;
+    border-radius: 10px;
+    width: 700px;
+    height: 450px;
+    padding: 60px;
+}
+
+label{
+    color: white;
+}
+
+label, input[type="radio"]{
+    margin-bottom: 3%;
+}
+
+input[type="radio"]{
+    border: 15px solid white;
+}
+
+.botoes-caixa{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+    padding: 0 12% 0 12%;
+}
+
+.botaoVoltar{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 33%;
+    text-align: center;
+    transition: 1s;
+}
+
+.botaoVoltar:hover{
+    background-color: white;
+    color: black;
+}
+
+.botaoEnviar{
+    width: 33%;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.botaoEnviar:hover{
+    background-color: white;
+    color: black;
+}
+
+.caixaInseto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: left;
+    align-items: center;
+}
+.organizaInseto {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #01282e;
+    border-radius: 10px;
+    width: 900px;
+    height: 700px;
+    padding: 60px;
+    color: white;
+}
+.imagemInseto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: right;
+    align-items: center;
+}
+.organizaImagemInseto{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    background-color: #01282e;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    color: white;
+}
+main{
+    padding: 0 6.5em;
+}
+
+.texto-caixa{
+    background-color: #01282e;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3em;
+    display: block;
+}
+
+.titulo-inseto{
+    color: #ffffff;
+    font-size: 3em;
+    text-decoration: 1px;
+    margin-bottom: 0.25em;
+    font-weight: 500;
+}
+
+.texto{
+    color: white;
+}
+
+.img-inseto{
+    width: 50%;
+    border: 5px solid white;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+.overflow {
+    overflow: visible;
+}

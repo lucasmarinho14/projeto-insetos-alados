@@ -1,0 +1,27 @@
+{% extends "base.html"%}
+{%block conteudo%}
+        <div class="caixaPerguntas">
+            <form action="{{url_for('resposta')}}" method="POST">
+                <fieldset class="perguntas">
+                    <h2 class="titulo-caixa">Quais são as características do seu inseto?</h2>
+                    <div class="radioPergunta">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="pergunta1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        {{pergunta1}}
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        value="pergunta2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        {{pergunta2}}
+                        </label>
+                    </div>
+                    <div class="botoes-caixa">
+                        <input type="submit" value="Enviar" class="botaoPergunta botaoEnviar">
+                        <a class="botaoPergunta botaoVoltar" href="{{ url_for('zerar') }}">Voltar</a>                         
+                    </div>
+          
+                </fieldset>
+            </form>     
+        </div>
+{%endblock%}

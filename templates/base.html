@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Insetos Alados</title>
+    </head>
+    <body class="bg-image">
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logoBio.png') }}" alt="Minha Imagem">
+            </div>
+            <div>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('zerar') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+            </ul>
+        </nav>
+        {%block conteudo %}
+        {%endblock%}
+
+    </body>
+</html>
